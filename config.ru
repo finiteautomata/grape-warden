@@ -1,3 +1,3 @@
-require_relative 'my_api'
+require_relative 'app/my_api'
 
 run MyAPI.new 

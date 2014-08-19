@@ -1,5 +1,5 @@
-This app is an example of using [Grape](https://github.com/intridea/grape) + [Warden](https://github.com/hassox/warden) authentication
-It defines a very simple API with two resources, foo and bar. 
+This app is an example of using [Grape](https://github.com/intridea/grape) + [Warden](https://github.com/hassox/warden) authentication.
+It defines a very simple API with two resources, foo and bar.
 The former is public, whereas bar needs authentication.
  
 In order to authenticate, API users provide a token called AUTH_TOKEN. For pedagogical reasons, the only valid token is 'abc123'.
