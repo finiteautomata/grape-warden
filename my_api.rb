@@ -21,7 +21,7 @@ class MyAPI < Grape::API
 
   resource :foo do
     get do
-      { foo: 133 }
+      { foo: 13 }
     end
   end
 
