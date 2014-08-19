@@ -1,0 +1,6 @@
+
+*sublime-project
+*sublime-workspace
+
+.bundle/*
+vendor/bundle/*
