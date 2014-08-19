@@ -1,4 +1,4 @@
-This app is an example of using Grape + Warden authentication
+This app is an example of using [Grape](https://github.com/intridea/grape) + [Warden](https://github.com/hassox/warden) authentication
 It defines a very simple API with two resources, foo and bar. 
 The former is public, whereas bar needs authentication.
  
