@@ -1,21 +1,16 @@
+# This app is an example of using Grape + Warden authentication
+# It defines a very simple API with two resources, foo and bar. 
+# The former is public, whereas bar needs authentication.
+# 
+# In order to authenticate, API users provide a token called AUTH_TOKEN. For pedagogical reasons, the only valid token is 'abc123'.
+# The token can be provided as an HTTP Header, or as a query string parameter
+
+
+require_relative 'my_auth'
+
 require 'grape'
 require 'warden'
 require 'pry'
-
-class User
-
-end
-
-Warden::Strategies.add(:my_token) do
-  def authenticate!
-    if env['HTTP_AUTH_TOKEN'] == 'abc123'
-      success!(User.new)
-    else
-      throw :warden
-    end
-  end
-end
-
 
 class MyAPI < Grape::API
   format :json
